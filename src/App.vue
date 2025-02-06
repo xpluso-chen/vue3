@@ -1,25 +1,18 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import Test from './components/Test0203-ref.vue'
-import Test2 from './components/Test0205-reactive.vue'
-import Test3 from './components/Test0206-computed.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-  <!-- 使用子組件 -->
-  <Test/>
-  <Test2/>
-  <Test3/>
+  <Test4 :list="car1"/>
 </template>
+
+<script setup lang="ts">
+import Test4 from './components/Test0206-props.vue'
+import { reactive } from 'vue'
+
+let car1 = reactive([
+{ name: 'BMW1', price: 99 },
+{ name: 'BMW2', price: 99 },
+{ name: 'BMW3',price: 99 },
+{ name: 'BMW4', price: 99 }
+])
+</script>
 
 <style scoped>
 .logo {
