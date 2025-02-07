@@ -3,11 +3,7 @@
     <Test class="logo">
 </Test>
 
-13
 <div class="logo2">
-    <ul>
-        <li>123</li>
-    </ul>
     <Test2 />
 </div>
 
@@ -15,7 +11,7 @@
 
 <script setup lang="ts">
 import Test from './components/Test0207-api.vue'
-import Test2 from './components/Test0203-ref.vue'
+import Test2 from './components/Test0207-Json.vue'
 
 
 </script>
@@ -24,10 +20,9 @@ import Test2 from './components/Test0203-ref.vue'
 @use "sass:map";
 .logo {
     border-radius: 50%;
-    background-color: map-get($color, bg-deepYellow );
+    background-color: map.get($color, deepYellow );
     width: 300px;
     height: 300px;
-    color: map.get($color, nav-deepblue );
 }
 .logo2{
     width: 600px;

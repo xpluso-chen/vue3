@@ -69,7 +69,7 @@ const findClosestStation = async (userLat: number, userLon: number) => {
 
 // 找到最近的縣市
 const findClosestPosition = async (userLat: number, userLon: number) => {
-    const url = './json/position.json';
+    const url = '/json/position.json';
 
     try {
         const response = await fetch(url);
@@ -95,7 +95,7 @@ const findClosestPosition = async (userLat: number, userLon: number) => {
 
         return closestPosition;
     } catch (error) {
-        console.error('Error fetching position data:', error);
+        console.error('Error fetching position data:url錯誤或對方定位沒開', error);
     }
 };
 
