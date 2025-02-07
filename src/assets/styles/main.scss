@@ -1,2 +1,7 @@
 @use "sass:map";
+@use "./reset" as *;
 @use "./variables" as *;
+@use "./mixins" as *;
+
+@use "./buttons" as *;
+@use "./component" as *;
