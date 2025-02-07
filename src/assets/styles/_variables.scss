@@ -1,10 +1,19 @@
 @use "sass:map";
 
 $color:(
-    bg-yellow:#EEEEEC,
-    bg-deepYellow:#F6F0E0,
-    bg-blue:#AAD2E9,
-    bg-hover:rgba(0, 0, 0, 0.3),
-    nav-deepblue:rgba(83, 124, 163, 0.7),
-    list-white:rgba(255, 255, 255, 0.2),
+    black:#000,
+    white:#F5F5F5,
+    yellow:#EFE2C0,
+    deepYellow:#E6A649,
+    orange:#F07145,
+    ttiffany:#66BAB7,
+    pick:#FFDBCF,
+    perple:#A0A3C9,
+    green:#C7CD9D,
+    
+    deepYellow-hover:#F07145,
+    ttiffany-hover:#A0A3C9,
+    pick-hover:#F5F5F5,
+    orange-hover:#E6A649,
+    green-hover:#EFE2C0,
 )
