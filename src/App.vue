@@ -3,15 +3,19 @@
     <Test class="logo">
 </Test>
 
-<div class="logo2">
+<div >
     <Test2 />
+</div>
+<div>
+    <Test3 />
 </div>
 
 </template>
 
 <script setup lang="ts">
 import Test from './components/Test0207-api.vue'
-import Test2 from './components/Test0207-Json.vue'
+import Test2 from './components/Test0208-motto.vue'
+import Test3 from './components/Test0208-joke.vue'
 
 
 </script>
